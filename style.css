@@ -1,0 +1,85 @@
+/* шпаргалка по grid: https://tpverstak.ru/grid/ */
+/* шпаргалка по flex: https://tpverstak.ru/flex-cheatsheet/ */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+body{
+    background: #E3F2FD;
+    margin: 0;
+    padding: 0;
+}
+
+.mainText{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: royalblue;
+}
+
+#header-container{
+    display: flex;
+    justify-content: center;
+}
+
+#header-container > button{
+    background-color: dodgerblue;
+    border: 10px solid dodgerblue;
+    margin: 2px;
+    color: white;
+}
+
+#header-container > button:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+#header-container > button:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+#header-container > button:hover{
+    background-color: rgb(0, 110, 255);
+    border: 10px solid rgba(0, 0, 0, 0);
+    animation: bounce 1s;
+}
+
+#textRequest{
+    text-align: center;
+    color: royalblue;
+}
+
+#main-container{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+
+#PostID{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.post{
+    background-color: lightskyblue;
+}
+
+.comment{
+    background-color:steelblue;
+}
+
+.todos{
+    background-color: aqua;
+}
